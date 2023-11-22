@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="brand">
+                <a href="#home">Elmiz</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="toogle">
+                <i class="fa fa-bars"></i>
+            </div>
+        </header>
+        <section>
+                <h4>Heyy!! There</h4>
+                <h1>I 'M <span id="text"></span></h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint aut amet voluptatibus natus quis nulla vitae tenetur soluta.</p>
+                <div class="social">
+                    <div class="icon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                </div>
+                <button>Download CV</button>
+        </section>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.js"></script>
+        <script>
+            var typed = new Typed("#text",{
+                strings:["UX/UI DESIGNER","UI DESIGNER","PHOTOGRAPHER","ELIZIABEITH ELMIZ"],
+                typeSpeed:50          
+          })
+
+
+          let menu = document.querySelector('nav ul')
+          let bar = document.querySelector('.toogle i')
+          
+          bar.addEventListener("click",function(){
+            menu.classList.toggle("show");
+        })
+        </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="desktop-design.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" integrity="sha512-ZnR2wlLbSbr8/c9AgLg3jQPAattCUImNsae6NHYnS9KrIwRdcY9DxFotXhNAKIKbAXlRnujIqUWoXXwqyFOeIQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&family=Young+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Poppins">
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+
+    <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <div class="text">
+      <h1 class="first">Learn to code by watching others</h1>
+      <p>See how experienced developers solve problems in real-time.
+         Watching scripted tutorials is great, but understanding how developers think is invaluable.
+      </p>
+    </div>
+    
+  <div class="form-all">
+    <p>Try it free 7 days <span>than $20/mo. thereather</span></p>
+
+    <div class="form">
+        <input type="text" placeholder="First Name" class="firstname"><small ></small>
+        <p></p>
+        <input type="text" placeholder="Last Name" class="lastname"><small ></small>
+        <p></p>
+        <input type="email" placeholder="Email Address" class="email" id="passwordInput"></i> <small></small>
+        <p></p>
+        <input type="password" placeholder="Password" id="password"><span class="eye"><i class="bi bi-eye" onclick="togglePassword()"></i></span> <small></small>
+        <p></p>
+        
+        <button type="submit">CLAIM YOUR FREE TRIAL</button>d
+        <h6>By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></h6>
+    </div>
+  </div>
+</div>
+<script>
+  let firstName = document.querySelector(".firstname")
+  let lastName = document.querySelector(".lastname")
+  let email = document.querySelector(".email")
+  let password = document.querySelector(".password")
+  let button = document.querySelector("button")
+  let errorMessage = document.querySelectorAll("small")
+
+  console.log(errorMessage)
+
+
+  button.addEventListener("click",function(e){
+    e.preventDefault();
+
+    if (firstName.value == ""){
+      firstName.style.border = "1px solid red"
+      errorMessage[0].style.color = "red"
+      errorMessage[0].innerHTML = "First Name can't be empty"
+    }else{
+      firstName.style.border = "1px solid green"
+      errorMessage[0].style.color = "green"
+      errorMessage[0].innerHTML = "Perfect"
+    }
+
+
+
+    if (lastName.value == ""){
+      lastName.style.border = "1px solid red"
+      errorMessage[1].style.color = "red"
+      errorMessage[1].innerHTML = "Last Name can't be empty"
+    }else{
+      lastName.style.border = "1px solid green"
+      errorMessage[1].style.color = "green"
+      errorMessage[1].innerHTML = "Nice"
+    }
+
+
+    if (email.value == ""){
+      email.style.border = "1px solid red"
+      errorMessage[2].style.color = "red"
+      errorMessage[2].innerHTML = 'Looks like this is not an Email'
+    }else{
+      email.style.border = "1px solid green"
+      errorMessage[2].style.color = "green"
+      errorMessage[2].innerHTML = "Beautiful"
+    }
+
+
+    if (password.value == ""){
+      password.style.border = "1px solid red"
+      errorMessage[3].style.color = "red"
+      errorMessage[3].innerHTML = "Password can't be empty"
+    }else{
+      password.style.border = "1px solid green"
+      errorMessage[3].style.color = "green"
+      errorMessage[3].innerHTML = "Good"
+    }
+
+    });
+
+
+
+// function togglePassword() {
+//   let visible = document.querySelector(".bi bi-eye")
+//   let hidden = document.querySelector(".bi bi-eye-slash")
+
+  
+// }
+
+
+let bi = document.querySelector('.bi-eye')
+let ba = document.querySelector('.bi-eye-slash')
+
+
+  function togglePassword() {
+  let input = document.getElementById("password");
+  if (input.type === "password") {
+    input.type = "text";
+  } else {
+    input.type = "password";
+  }
+}
+
+
+</script>
+</body>
+</html>

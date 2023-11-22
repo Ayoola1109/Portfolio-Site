@@ -1,0 +1,322 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  background-color: aliceblue;
+  width: 100%;
+  /* font-family: 'Bacasime Antique', serif;
+  font-family: 'Playfair Display', serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400; */
+  font-size: larger;
+}
+/* Utility Class */
+.l-heading {
+  color: rgb(250, 38, 38);
+  font-size: 45px;}
+a {
+  text-decoration: none;
+  font-size: 25px;
+}
+a:hover {
+  color: red;
+}
+
+/* NAVBAR */
+  .logo {
+    height: 50px;
+    width: 50px;
+    color: white;
+  }
+#nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: darkblue;
+  padding: 15px;
+  align-items: center;
+  font-size: 20px;
+  z-index: 1;
+  color: white;
+}
+.title {
+  font-weight: bolder;
+}
+ul li {
+  list-style: none;
+}
+ul li a {
+  text-decoration: none;
+  padding: 10px 10px;
+  color: white;
+  font-size: 25px;
+}
+ul {
+  display: flex;
+  flex-direction: row;
+}
+ul li a:hover {
+  background-color: rgb(185, 188, 235);
+  color: rgb(255, 0, 0);
+  border-radius: 5px;
+}
+a {
+  text-decoration: none;
+  font-size: 25px;
+}
+.crl {
+  clear: both;
+}
+/* HEADER */
+header {
+  background-image: url(./img/pad.jpg);
+  background-size: cover;
+  height: 100vh;
+  display: block;
+  margin: auto;
+}
+/* SECTION */
+section {
+  background-color: rgb(43, 255, 0);
+  max-width: 1100px;
+  margin-top: 20px;
+}
+#container {
+  position: absolute;
+  width: 100%;
+  border: 1px red solid;
+}
+/* Call of Duty */
+#COD {
+  position: absolute;
+  height: 400px;
+  background-color: rgb(0, 0, 0);
+  width: 50%;
+  color: rgb(255, 0, 0);
+}
+.COD-img {
+  position: absolute;
+  background: url(./img/Call\ of\ duty.jpg) center center/cover;
+  height: 400px;
+  width: 350px;
+  left: 323px;
+  border: 1px solid red;
+}
+.item-1 {
+  position: absolute;
+  left: 25px;
+  top: 30%;
+}
+.COD-p {
+  position: absolute;
+  top: 40%;
+  right: 450px;
+  line-height: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 30px;
+  color: rgb(219, 38, 38);
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.crl {
+  clear: both;
+}
+/* Fornite */
+#Fornite {
+  position: absolute;
+  height: 400px;
+  background-color: rgb(0, 0, 0);
+  width: 50%;
+  color: rgb(255, 0, 0);
+  left: 50%;
+  border: 1px solid red;
+  z-index: 1;
+}
+.Fornite-img {
+  position: absolute;
+  background: url(./img/fornite\ image.jpg) no-repeat center center/cover;
+  height: 398px;
+  min-width: 350px;
+  border: 1px solid red;
+  z-index: -2;
+}.item-2 {
+  position: absolute;
+  left: 60%;
+  top: 40%;
+}
+.Fornite-p {
+  position: absolute;
+  top: 50%;
+  left: 400px;
+  line-height: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-right: 20px;
+  color: rgb(219, 38, 38);
+  font-size: 20px;
+  font-weight: bolder;
+}
+/* Diablo */
+#Diablo {
+  position: absolute;
+  top: 402px;
+  height: 400px;
+  width: 50%;
+  color: red;
+  background: black;
+  border: 1px solid red;
+}
+.Diablo-img {
+  content: '';
+  position: absolute;
+  background: url(./img/diablo-iv-lilith-diablo-4-2022-games-3840x2160-5969.png) center center/cover;
+  min-height: 399px;
+  min-width: 350px;
+  border: 1px solid red;
+}
+.item-3 {
+  position: absolute;
+  top: 40%;
+  left: 450px;
+}
+.Diablo-p {
+  position: absolute;
+  top: 50%;
+  left: 450px;
+  line-height: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-right: 20px;
+  color: rgb(219, 38, 38);
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+/* Forza Horizon */
+#FH {
+  position: absolute;
+  top: 402px;
+  height: 400px;
+  width: 50%;
+  color: red;
+  background: black;
+  border: 1px solid red;
+  left: 50%;
+}
+.FH-img {
+  position: absolute;
+  background: url(./img/forza-horizon-4-2021-4k-f6.jpg) center center/cover;
+  width: 350px;
+  height: 398px;
+  left: 320px;
+  border: 1px solid red;
+}
+.item-4 {
+  position: absolute;
+  top: 30%;
+  left: 40px;
+}
+.FH-p {
+  position: absolute;
+  top: 40%;
+  right: 400px;
+  line-height: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 40px;
+  margin-bottom: 30px;
+  color: rgb(219, 38, 38);
+  font-size: 20px;
+  font-weight: bolder;
+  z-index: 1;
+}
+
+/* MK11 */
+#MK11 {
+  position: absolute;
+  top: 804px;
+  height: 400px;
+  width: 50%;
+  color: red;
+  background: black;
+  border: 1px solid red;
+  z-index: 1;
+}
+.MK11-img {
+  position: absolute;
+  background: url(./img/mk11.jpg) center center/cover;
+  width: 350px;
+  height: 398px;
+  left: 322px;
+  border: 1px solid red;
+}
+.item-5 {
+  position: absolute;
+  top: 40%;
+  left: 40px;
+  z-index: 1;
+}
+.MK11-p {
+  position: absolute;
+  top: 50%;
+  right: 400px;
+  line-height: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 40px;
+  margin-bottom: 30px;
+  color: rgb(219, 38, 38);
+  font-size: 20px;
+  font-weight: bolder;
+  z-index: 1;
+}
+
+/* MADDEN */
+#Madden {
+  position: absolute;
+  top: 804px;
+  height: 400px;
+  width: 50%;
+  color: red;
+  background: black;
+  border: 1px solid red;
+  left: 50%;
+}
+.Madden-img {
+  content: '';
+  position: absolute;
+  background: url(./img/apps.webp) center center/cover;
+  min-height: 399px;
+  min-width: 350px;
+  border: 1px solid red;
+}
+.item-6 {
+  position: absolute;
+  top: 40%;
+  left: 400px;
+}
+.Madden-p {
+  position: absolute;
+  top: 50%;
+  left: 400px;
+  line-height: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-right: 20px;
+  color: rgb(219, 38, 38);
+  font-size: 20px;
+  font-weight: bolder;
+}
+footer{
+  position: relative;
+  top: 78rem;
+}
+footer h3{
+  color: blue;
+  font-size: 3rem;
+}
+
+
+

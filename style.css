@@ -1,0 +1,764 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 12%;
+    position: fixed;
+    background: transparent;
+    backdrop-filter: blur(5px);
+    height: 70px;
+    width: 100%;
+    border-bottom: 1px red solid;
+    z-index: 10;
+}
+.icon a img{
+    width: 50px;
+    height: 50px;
+}
+nav {
+
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    transition: 0.5s;
+}
+nav ul li a {
+    margin-left: 30px;
+    color: rgb(0,0,0,0.5);
+    transition: all 0.5s;
+    font-size: 14px;
+    position: relative;
+}
+nav ul li a:hover {
+    color: black;
+}
+nav ul li a::before{
+    content: '';
+    border-bottom: 2px red solid;
+    position: absolute;
+    height: 2px;
+    width: 0px;
+    top: 100%;
+    /* left: 100%; */
+    transition: all 0.5s;
+}
+nav ul li a:hover::before{
+    width: 100%;
+}
+
+nav ul li a:focus {
+    color: red;
+}
+/* nav .show{
+    opacity: 1;
+    right: 90%;
+    width: 500px;
+    height: 500%;
+} */
+
+.toggle i{
+    font-size: 1rem;
+    color: red;
+    border: 0.5px solid red;
+    border-radius: 5px;
+    padding: 10px;
+    transition: 0.5s;
+    display: none;
+}
+
+.toogle i:hover{
+    background-color: #cc2e2e;
+    color: white;
+}
+section{
+    height: 100vh;
+    width: 100%;
+}
+#home {
+    padding: 200px 12%;
+}
+section a {
+    color: white;
+    border: 1px solid red;
+    padding: 10px;
+    background-color: red;
+    border-radius: 8px;
+    transition: 0.8s;
+}
+section a:hover {
+    color: white;
+    background-color: black;
+    border: none;
+}
+section h4{
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+}
+section h1 {
+    font-size: 55px;
+    font-size: 700;
+    letter-spacing: 1px;
+    margin: 10px 0;
+    color: red;
+}
+section p {
+    font-size: 14px;
+    width: 65%;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+#text {
+    color: black;
+}
+#about {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding: 10% 12%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#about h1 {
+    font-size: 45px;
+    font-weight: 600;
+    text-align: center;
+}
+
+#about p{
+    margin-top: 20px;
+    text-align: center;
+}
+
+#about button {
+    text-align: center;
+    display: block;
+    margin: auto;
+    align-items: center;
+    color: white;
+    border: 1px solid red;
+    padding: 10px;
+    background-color: red;
+    border-radius: 8px;
+    transition: 0.8s;
+    margin-top: 20px;
+}
+#about button:hover {
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+}
+#services {
+    padding: 10% 12%;
+    height: 100vh;
+    position: relative;
+}
+#services h1 {
+    font-size: 45px;
+    font-weight: 600;
+    text-align: center;
+
+}
+
+    #classes {
+        display: flex;
+        gap: 5rem;
+        margin-top: 20px;
+        transition: all 0.5s;
+    }
+    #class {
+        position: relative;
+        border: 1px solid red;
+        background-color: black;
+        text-align: left;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 5px 5px 5px ;
+        color: white;
+        transition: all 0.5s;
+        height: 350px;
+        width: 50%;
+    }
+    #class:hover {
+        background-color: red;
+        top: -10px;
+    }
+    #class h2 {
+        margin-bottom: 15px;
+        font-size: 20px;
+        text-align: left;
+    }
+    #class p {
+        font: 5px;
+        font-style: 400;
+        text-align: left;
+
+    }
+    #class i{
+        font-size: 40px;
+        padding: 20px 10px;
+        
+    }
+    #classes .first p {
+        font-size: 13px;
+        color: rgba(255, 255, 255, 0.74);
+        margin-bottom: 10px;
+
+    }
+    /* #classes .second p {
+        font-size: 13px;
+        color: rgba(255, 255, 255, 0.74);
+    } */
+    #classes .third p {
+        font-size: 13px;
+        color: rgba(255, 255, 255, 0.699);
+        margin-bottom: 10px;
+
+    }
+    #classes a {
+        color: white;
+        font-size: 12px;
+        font-weight: 600;
+    }
+    #classes a:hover {
+        color:black;
+    }
+
+    #portfolio {
+        height: 100vh;
+        padding: 100px 12%;
+        position: relative;
+    }
+    #portfolio h1{
+    font-size: 45px;
+    font-weight: 600;
+    text-align: center;
+
+    }
+
+    #works {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        position: relative;
+    }
+    .img {
+        border-radius: 8px;
+        width: 300px;
+        height: 300px;
+        overflow: hidden;
+    }
+    #works img {
+        width: 300px;
+        height: 300px;
+        background-size: cover;
+        background-position: center;
+        transition: 0.5s;
+        overflow: hidden;
+    }
+    #works img:hover {
+        transform: scale(1.1);
+    }
+    #project {
+        position: absolute;
+        
+    }
+    #work {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .layer  {
+        position: absolute;
+       color: white;
+       display: flex;
+       justify-content: center;
+       flex-direction: column;
+       text-align: center;
+       bottom: 0;
+       left: 0;
+       text-shadow: 2px 2px 2px red;
+       background-color: rgba(0, 0, 0, 0.651) ;
+       background: linear-gradient(rgba(0, 0, 0, 0.651),rgba(255, 0, 0, 0.534));
+       width: 100%;
+       height: 0;
+       overflow: hidden;
+       transition: 0.5s;
+       border-radius: 8px;
+    }
+    .layer h3 {
+
+    }
+    .layer p {
+        margin-top: 10px;
+        padding: 0 10px;
+    }
+    .layer i{
+        display: block;
+        /* background-color: white; */
+        border-radius: 50%;
+        font-size: 20px;
+        padding: 5px 0;
+        margin-top: 5px;
+        cursor: pointer;
+    }
+    #work:hover .layer{
+        height: 100%;
+    }
+    
+
+    #contact {
+        padding: 170px 12%;
+        height: 100vh;
+        position: relative;
+    }
+    #contact h1 {
+        font-size: 45px;
+        font-weight: 600;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+   
+        .contact p i {
+            font-size: 25px;
+            margin-right: 10px;
+            margin-bottom: 35px;
+        }
+        #icon {
+            display: flex;
+            gap: 1rem;
+        }
+        .icon {
+            font-size: 30px;
+            border: 10px;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        .icon:hover{
+            color: red;
+        }
+        .form{
+            float: right;
+            position: absolute;
+            top: 28%;
+            left: 45%;
+        }
+        input {
+            width: 600px;
+            border: none;
+            background-color: rgba(0, 0, 0, 0.377);
+            padding: 15px 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        #Message {
+            border: none;
+            width: 600px;
+            background-color: rgba(0, 0, 0, 0.377);
+            padding: 15px 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        .form button {
+            color: white;
+            border: 1px solid red;
+            padding: 15px 10px;
+            
+            background-color: red;
+            width: 100%;
+            border-radius: 8px;
+            transition: 0.8s;
+        }
+        .form button:hover {
+            color: white;
+            background-color: black;
+            border: 1px solid red;
+            
+        }
+        small {
+            display: block;
+            text-align: right;
+            font-style: italic;
+            padding-right: 10px;
+        }
+        @media (max-width:1200px) {
+            #classes {
+                gap: 3rem;
+            }
+            #class {
+                height: 400px;
+                width: 60%;
+            }
+            input {
+                width: 450px;
+            }
+            #Message {
+                width: 450px;
+            }
+            #works {
+                gap: 1rem;
+            }
+            .img {
+                width: 250px;
+            }
+            }
+        @media (max-width:920px) {
+            .img {
+                width: 220px;
+            }
+            input {
+                width: 400px;
+            }
+            #Message {
+                width: 400px;
+            }
+            #contact h1 {
+                font-size: 40px;
+                font-weight: 600;
+            }
+            #contact p {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width:900px) {
+            .img {
+                width: 200px;
+            }
+            input {
+                width: 360px;
+            }
+            #Message {
+                width: 360px;
+            }
+            #contact h1 {
+                font-size: 40px;
+                font-weight: 600;
+            }
+            #contact p {
+                font-size: 14px;
+            }
+            .toggle i{
+                display: block;
+                opacity: 1;
+                cursor: pointer;
+            }
+            .toggle i:hover{
+               color: white;
+               background-color: red;
+            }
+            nav {
+   
+            }
+
+            nav ul {
+                display: block;
+                position: absolute;
+                top: 100%;
+                width: 50%;
+                left: 50%;
+                transition: 0.5s;
+                background-color: rgba(0, 0, 0, 0.651);
+                color: white;
+                padding: 20px;
+               height: 300px;
+               border-radius: 8px;
+                opacity: 0;
+            }
+            nav ul li {
+                margin-bottom: 30px;
+
+            }
+            nav ul li a{
+                color: white;
+                margin-bottom: 20px;
+                
+            }
+            nav ul li a:hover {
+                color: white;
+            } 
+                  nav .show{
+        opacity: 1;
+     }
+        }
+        @media (max-width:780px) {
+            /* #classes {
+                gap: 2rem;
+            }
+            #class {
+                height: 500px;
+                width: 70%;
+            } */
+            .img {
+                width: 160px;
+            }
+            input {
+                width: 300px;
+            }
+            #Message {
+                width: 300px;
+            }
+            #contact h1 {
+                font-size: 40px;
+                font-weight: 600;
+            }
+            #contact p {
+                font-size: 12px;
+            }
+            .layer h3 {
+                font-size: 17px;
+            }
+            .layer p {
+                font-size: 12px;
+                margin-top: 10px;
+                padding: 0 10px;
+            }
+        }
+        @media (max-width:680px) {
+            /* #classes {
+                gap: 2rem;
+            }
+            #class {
+                height: 500px;
+                width: 70%;
+            } */
+            .img {
+                width: 160px;
+            }
+            input {
+                width: 300px;
+            }
+            #Message {
+                width: 300px;
+            }
+            #contact h1 {
+                font-size: 30px;
+                font-weight: 600;
+            }
+            #contact p {
+                font-size: 10px;
+                font-weight: 500;
+            }
+            .layer h3 {
+                font-size: 17px;
+            }
+            .layer p {
+                font-size: 12px;
+                margin-top: 10px;
+                padding: 0 10px;
+            }
+            #works {
+                display: block;
+                position: relative;
+
+            }
+            .img {
+                border-radius: 8px;
+                width: 300px;
+                height: 300px;
+                overflow: hidden;
+                margin-bottom: 20px;
+                position: relative;
+            }
+
+
+            .layer h3 {
+                font-size: 17px;
+            }
+            .layer p {
+                font-size: 12px;
+                margin-top: 10px;
+                padding: 0 10px;
+            }
+            
+            #work {
+                position: relative;
+                overflow: hidden;
+            }
+            .layer  {
+                display: inherit;
+                position: absolute;
+               color: white;
+               bottom: 0;
+               left: 0;
+               width: 300px;
+               height: 0;
+               margin-left: 18%;
+               margin-bottom: 20px;
+               overflow: hidden;
+               border-radius: 8px;
+
+            }
+            #works img {
+                width: 300px;
+                height: 300px;
+                background-size: cover;
+                background-position: center;
+                transition: 0.5s;
+                overflow: hidden;
+                border-radius: 8px;
+
+            }     
+        }
+
+        @media (max-width:630px) {
+            #home {
+                height: 100vh;
+                padding-top: 100px;
+            }
+            #about {
+                display: block;
+                padding-top: 120px;
+                padding-bottom: 100px;
+
+            }
+            #services{
+                padding-top: 20%;
+                margin-top: 200px;
+            } 
+            #classes {
+                display: block;
+                /* justify-content: center; */
+            }
+            #class {
+                margin-bottom: 20px;
+                width: 100%;
+            }
+            #works {
+                display: block;
+                position: relative;
+                width: 100%;
+            }
+            .img {
+                border-radius: 8px;
+                width: 300px;
+                height: 300px;
+                overflow: hidden;
+                margin-bottom: 20px;
+                position: relative;
+            }
+
+
+            .layer h3 {
+                font-size: 17px;
+            }
+            .layer p {
+                font-size: 12px;
+                margin-top: 10px;
+                padding: 0 10px;
+            }
+            
+            #work {
+                position: relative;
+                overflow: hidden;
+            }
+            .layer  {
+                position: absolute;
+               color: white;
+               bottom: 0;
+               left: 0;
+               width: 300px;
+               height: 0;
+               margin-left: 18%;
+               margin-bottom: 20px;
+               overflow: hidden;
+               border-radius: 8px;
+
+            }
+            #works img {
+                width: 300px;
+                height: 300px;
+                background-size: cover;
+                background-position: center;
+                transition: 0.5s;
+                overflow: hidden;
+                border-radius: 8px;
+
+            }       
+             #portfolio {
+                /* position: absolute; */
+                margin-top: 600px;
+                display: block;
+                position: relative;
+               
+            }
+            #contact {
+                margin-top: 600px;
+                display: block;
+            }
+            .form {
+               position: absolute;
+                float: none;
+                margin-left: -200px;
+                margin-top: 270px;
+            }  
+            input {
+                width: 450px;
+            }
+            #Message {
+                width: 450px;
+            }
+            #contact h1 {
+                font-size: 40px;
+                font-weight: 700;
+            }
+            #contact p {
+                font-size: 16px;
+                font-weight: 500;
+            }
+        }
+        @media (max-width:530px) {
+            .layer{
+               margin-left: 11%;
+            }
+        }
+        @media (max-width:500px) {
+            input {
+                width: 380px;
+            }
+            #Message {
+                width: 380px;
+            }
+            .form {
+                position: absolute;
+                float: none;
+                margin-left: -170px;
+                margin-top: 270px;
+            }  
+            .layer  {
+                position: absolute;
+               color: white;
+               bottom: 0;
+               left: 0;
+               width: 300px;
+               height: 0;
+               margin-left: 33px;
+               margin-bottom: 20px;
+               overflow: hidden;
+               border-radius: 8px;
+
+            }
+        }
+
+   
+
+        
