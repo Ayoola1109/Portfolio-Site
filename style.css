@@ -82,7 +82,14 @@ nav ul li a:focus {
     transition: 0.5s;
     display: none;
 }
-
+.icon a {
+    color: red;
+    font-size: 1.9rem;
+    font-weight: 700;
+}
+.icon a:hover{
+    color: purple;
+} 
 .toogle i:hover{
     background-color: #cc2e2e;
     color: white;
@@ -131,7 +138,7 @@ section p {
 #text {
     color: black;
 }
-.dp{
+.dp img{
     position: absolute;
     height: 100vh;
     overflow: hidden;
@@ -139,8 +146,9 @@ section p {
     right: 10%;
     z-index: -2;
 }
-.dp:hover {
+.dp img:hover {
     opacity: 0.8;
+    background-color: black;
 }
 #about {
     width: 100%;
@@ -547,6 +555,14 @@ section p {
                 margin-top: 10px;
                 padding: 0 10px;
             }
+            .dp img{
+                position: absolute;
+                height: 100vh;
+                overflow: hidden;
+                top: 0;
+                right: 6%;
+                z-index: -2;
+            }
         }
         @media (max-width:680px) {
             /* #classes {
@@ -556,6 +572,14 @@ section p {
                 height: 500px;
                 width: 70%;
             } */
+            .dp img{
+                position: absolute;
+                height: 100vh;
+                overflow: hidden;
+                top: 0;
+                right: 2%;
+                z-index: -2;
+            }
             .img {
                 width: 160px;
             }
