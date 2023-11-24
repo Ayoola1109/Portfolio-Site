@@ -565,13 +565,7 @@ section p {
             }
         }
         @media (max-width:680px) {
-            /* #classes {
-                gap: 2rem;
-            }
-            #class {
-                height: 500px;
-                width: 70%;
-            } */
+
             .dp img{
                 position: absolute;
                 height: 100vh;
@@ -579,6 +573,7 @@ section p {
                 top: 0;
                 right: 2%;
                 z-index: -2;
+                width: 60%;
             }
             .img {
                 width: 160px;
