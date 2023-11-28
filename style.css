@@ -98,7 +98,7 @@ section{
     height: 100vh;
     width: 100%;
     /* border-bottom:2px solid #cc2e2e; */
-    box-shadow:  5px 0px 10px  black;
+    border-bottom: 2px rgba(255, 0, 0, 0.623) solid;
 
 }
 #home {
@@ -280,37 +280,39 @@ section p {
         display: flex;
         justify-content: space-between;
         margin-top: 20px;
-        position: relative;
+        box-sizing: border-box;
+        /* position: relative; */
     }
     .img {
         border-radius: 8px;
         width: 300px;
-        height: 300px;
+        height: 100%;
         overflow: hidden;
     }
     #works img {
-        width: 300px;
-        height: 300px;
+         width: 100%;
+         height: 100%;
+        /* height: 300px; */
         background-size: cover;
         background-position: center;
         transition: 0.5s;
         overflow: hidden;
+        
     }
     #works img:hover {
         transform: scale(1.1);
-    }
-    #project {
-        position: absolute;
-        
     }
     #work {
         position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 300px;
+        height: 300px;
+        margin-bottom: 30px;
     }
     .layer  {
-        position: absolute;
+       position: absolute;
        color: white;
        display: flex;
        justify-content: center;
@@ -321,14 +323,17 @@ section p {
        text-shadow: 2px 2px 2px red;
        background-color: rgba(0, 0, 0, 0.651) ;
        background: linear-gradient(rgba(0, 0, 0, 0.651),rgba(255, 0, 0, 0.534));
-       width: 100%;
        height: 0;
-       overflow: hidden;
        transition: 0.5s;
+       width: 100%;
        border-radius: 8px;
+       opacity: 0;
+       
     }
-    .layer h3 {
-
+    #work:hover .layer{
+        opacity: 1;
+        height: 100%;
+        
     }
     .layer p {
         margin-top: 10px;
@@ -343,9 +348,7 @@ section p {
         margin-top: 5px;
         cursor: pointer;
     }
-    #work:hover .layer{
-        height: 100%;
-    }
+
     
 
     #contact {
@@ -565,7 +568,13 @@ section p {
             }
         }
         @media (max-width:680px) {
-
+            /* #classes {
+                gap: 2rem;
+            }
+            #class {
+                height: 500px;
+                width: 70%;
+            } */
             .dp img{
                 position: absolute;
                 height: 100vh;
@@ -573,7 +582,6 @@ section p {
                 top: 0;
                 right: 2%;
                 z-index: -2;
-                width: 60%;
             }
             .img {
                 width: 160px;
@@ -591,68 +599,9 @@ section p {
             #contact p {
                 font-size: 10px;
                 font-weight: 500;
-            }
-            .layer h3 {
-                font-size: 17px;
-            }
-            .layer p {
-                font-size: 12px;
-                margin-top: 10px;
-                padding: 0 10px;
-            }
-            #works {
-                display: block;
-                position: relative;
-
-            }
-            .img {
-                border-radius: 8px;
-                width: 300px;
-                height: 300px;
-                overflow: hidden;
-                margin-bottom: 20px;
-                position: relative;
-            }
-
-
-            .layer h3 {
-                font-size: 17px;
-            }
-            .layer p {
-                font-size: 12px;
-                margin-top: 10px;
-                padding: 0 10px;
-            }
-            
-            #work {
-                position: relative;
-                overflow: hidden;
-            }
-            .layer  {
-                display: inherit;
-                position: absolute;
-               color: white;
-               bottom: 0;
-               left: 0;
-               width: 300px;
-               height: 0;
-               margin-left: 18%;
-               margin-bottom: 20px;
-               overflow: hidden;
-               border-radius: 8px;
-
-            }
-            #works img {
-                width: 300px;
-                height: 300px;
-                background-size: cover;
-                background-position: center;
-                transition: 0.5s;
-                overflow: hidden;
-                border-radius: 8px;
-
-            }     
+ 
         }
+    }
 
         @media (max-width:630px) {
             #home {
@@ -690,44 +639,12 @@ section p {
                 margin-bottom: 20px;
                 position: relative;
             }
-
-
-            .layer h3 {
-                font-size: 17px;
-            }
-            .layer p {
-                font-size: 12px;
-                margin-top: 10px;
-                padding: 0 10px;
-            }
-            
             #work {
-                position: relative;
-                overflow: hidden;
+                margin-left: 10%;
             }
-            .layer  {
-                position: absolute;
-               color: white;
-               bottom: 0;
-               left: 0;
-               width: 300px;
-               height: 0;
-               margin-left: 18%;
-               margin-bottom: 20px;
-               overflow: hidden;
-               border-radius: 8px;
-
+            .layer {
+                margin-bottom: 10px;
             }
-            #works img {
-                width: 300px;
-                height: 300px;
-                background-size: cover;
-                background-position: center;
-                transition: 0.5s;
-                overflow: hidden;
-                border-radius: 8px;
-
-            }       
              #portfolio {
                 /* position: absolute; */
                 margin-top: 600px;
@@ -760,11 +677,7 @@ section p {
                 font-weight: 500;
             }
         }
-        @media (max-width:530px) {
-            .layer{
-               margin-left: 11%;
-            }
-        }
+
         @media (max-width:500px) {
             input {
                 width: 380px;
@@ -778,19 +691,37 @@ section p {
                 margin-left: -170px;
                 margin-top: 270px;
             }  
-            .layer  {
-                position: absolute;
-               color: white;
-               bottom: 0;
-               left: 0;
-               width: 300px;
-               height: 0;
-               margin-left: 33px;
-               margin-bottom: 20px;
-               overflow: hidden;
-               border-radius: 8px;
-
+ 
+        }
+        @media (max-width:400px) {
+            input {
+                width: 300px;
             }
+            #Message {
+                width: 300px;
+            }
+            .form {
+                position: absolute;
+                float: none;
+                margin-left: -140px;
+                margin-top: 270px;
+            }  
+ 
+        }
+        @media (max-width:300px) {
+            input {
+                width: 250px;
+            }
+            #Message {
+                width: 250px;
+            }
+            .form {
+                position: absolute;
+                float: none;
+                margin-left: -120px;
+                margin-top: 270px;
+            }  
+ 
         }
 
    
