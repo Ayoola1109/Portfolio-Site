@@ -691,6 +691,7 @@ section p {
             #home p{
                 width: 80%;
             }
+
             input {
                 width: 380px;
             }
@@ -706,6 +707,9 @@ section p {
  
         }
         @media (max-width:400px) {
+            #home h4 {
+                margin-top: 160px;
+            }
             #home h2, #text{
                 font: 30px;
                 font-weight: 600;
@@ -714,12 +718,20 @@ section p {
                 font-size: 40px;
 
             }
+            section {
+                border-bottom: none;
+            }
+
             #text {
                 font-size: 40px;
                 letter-spacing: 0.5px;
             }
             .dp img {
                 width: 260px;
+                margin-top: -100px;
+               
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
             }
             #home p{
                 width: 80%;
