@@ -707,7 +707,7 @@ section p {
         }
         @media (max-width:400px) {
             #home h4{
-                padding-top: 300px;
+                padding-top: 230px;
             }
             #home h2, #text{
                 font: 30px;
