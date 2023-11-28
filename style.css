@@ -775,11 +775,11 @@ section p {
             }
             .dp img {
                 width: 220px;
+                height: 100vh;
             }
             .dp img {
                 width: 220px;
                 margin-top: -20px;
-               
                 border-bottom-left-radius: 20px;
                 border-bottom-right-radius: 20px;
             }
