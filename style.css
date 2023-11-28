@@ -736,7 +736,7 @@ section p {
             }
 
             #work {
-                margin-left: 0;
+                margin-left: 5%;
                 width: 230px;
             }
             .img {
@@ -769,7 +769,7 @@ section p {
                 font-weight: 400;
             }
             #work {
-                margin-left: 3%;
+                margin-left: 5%;
             }
             input {
                 width: 230px;
