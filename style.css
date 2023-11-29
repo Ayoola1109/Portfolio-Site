@@ -7,12 +7,15 @@
     font-family: 'Poppins', sans-serif;
     
 }
+body {
+    height: 100%;
+}
 html{
     scroll-behavior: smooth;
 }
 .container {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     
 }
 header{
@@ -99,8 +102,10 @@ section{
     height: 100vh;
     width: 100%;
     /* border-bottom:2px solid #cc2e2e; */
-    border-bottom: 2px rgba(255, 0, 0, 0.623) solid;
-
+    /* border-bottom: 2px rgba(255, 0, 0, 0.623) solid; */
+    background: url(./img/Untitled\ design\ \(1\).png);
+    background-size: cover;
+    background-position: top;
 }
 #home {
     padding: 200px 12%;
@@ -146,6 +151,9 @@ section p {
     top: 0;
     right: 10%;
     z-index: -2;
+    object-fit: contain;
+    max-width: 100%;
+    
 }
 .dp img:hover {
     opacity: 0.8;
@@ -527,6 +535,15 @@ section p {
         opacity: 1;
      }
         }
+        @media (max-width:800px) {
+            section {
+
+                background: url(./img/Untitled\ design\ \(1\)2.png);
+                background-size: 600px;
+                background-position: right;
+                background-repeat: no-repeat;
+            }
+        }
         @media (max-width:780px) {
             /* #classes {
                 gap: 2rem;
@@ -535,6 +552,13 @@ section p {
                 height: 500px;
                 width: 70%;
             } */
+            section {
+
+                background: url(./img/Untitled\ design\ \(1\)2.png);
+                background-size: 600px;
+                background-position: right;
+                background-repeat: no-repeat;
+            }
             .img {
                 width: 160px;
             }
@@ -570,6 +594,11 @@ section p {
             }
         }
         @media (max-width:680px) {
+            #home {
+                padding-top: 190px;
+                overflow: hidden;
+
+            }
             /* #classes {
                 gap: 2rem;
             }
@@ -606,6 +635,18 @@ section p {
     }
 
         @media (max-width:630px) {
+            #home {
+                padding-top: 200px;
+                overflow: hidden;
+
+            }
+            section {
+
+                background: url(./img/Untitled\ design\ \(1\)2.png);
+                background-size: 600px;
+                background-position: right;
+                background-repeat: no-repeat;
+            }
             #home {
                 height: 100vh;
                 padding-top: 100px;
@@ -681,6 +722,21 @@ section p {
         }
 
         @media (max-width:500px) {
+            #home {
+                padding-top: 200px;
+                overflow: hidden;
+
+            }
+            #home h4{
+                padding-top: -100px;
+            }
+            section {
+
+                background: url(./img/Untitled\ design\ \(1\)2.png);
+                background-size: 600px;
+                background-position: bottom;
+                background-repeat: no-repeat;
+            }
             #home h1 {
                 font: 45px;
                 font-weight: 600;
@@ -715,6 +771,11 @@ section p {
                 overflow: hidden;
                 border: none;
                 /* box-shadow: 2px 0px 6px rgba(0, 0, 0, 0.651); */
+             
+                background: url(./img/Untitled\ design\ \(1\)2.png);
+                background-size: 600px;
+                background-position: bottom;
+                background-repeat: no-repeat;
             }
             #home h4{
                 padding-top: -100px;
