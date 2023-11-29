@@ -848,6 +848,23 @@ section p {
  
         }
         @media (max-width:300px) {
+            #home {
+                padding-top: 190px;
+                overflow: hidden;
+
+            }
+            section {
+                overflow: hidden;
+                border: none;
+                border-bottom: 1px red solid;
+
+                /* box-shadow: 2px 0px 6px rgba(0, 0, 0, 0.651); */
+             
+                background: url(./img/Untitled\ design\ \(1\)2.png);
+                background-size: 600px;
+                background-position: bottom;
+                background-repeat: no-repeat;
+            }
             #home h1 {
                 font: 40px;
                 font-weight: 600;
