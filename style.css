@@ -646,6 +646,7 @@ section p {
                 background-size: 600px;
                 background-position: right;
                 background-repeat: no-repeat;
+                border: 1px red solid;
             }
             #home {
                 height: 100vh;
@@ -770,6 +771,8 @@ section p {
             section {
                 overflow: hidden;
                 border: none;
+                border-bottom: 1px red solid;
+
                 /* box-shadow: 2px 0px 6px rgba(0, 0, 0, 0.651); */
              
                 background: url(./img/Untitled\ design\ \(1\)2.png);
